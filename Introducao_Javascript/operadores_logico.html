@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Curso Javascript - Operadores Logicos</title>
+</head>
+<body>
+
+    <p>Operadores Logicos em JavaScript</p>
+    
+    <script>
+        var sexo = 'M', idade = 18;
+
+        function alistarExercito(sexo, idade) {
+            if (sexo === 'M' && idade >= 18) {
+                return 'Bebe, você precisa se alistar no exercito'
+            } else if (sexo === 'M' && idade < 18 ) {
+                return 'Calma que tua hora chegarás';
+            } else {
+                return 'Não é obrigatório'
+            }
+        }
+
+        var resultado = alistarExercito('F', 18);
+    
+        console.log(resultado);
+    </script>
+</body>
+</html>

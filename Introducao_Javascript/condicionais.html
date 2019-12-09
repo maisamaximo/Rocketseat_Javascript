@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Curso Javascript - Condicionais</title>
+</head>
+<body>
+
+    <p>Condicionais em JavaScript</p>
+    
+    <script>
+        function retornaSexoIF(sexo) {
+            if (sexo === 'M') {
+                return 'Masculino'
+            } else if (sexo === 'F' ) {
+                return 'Feminino';
+            } else {
+                return 'Outro'
+            }
+        }
+
+        function retornaSexoSwitch(sexo) {
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino'
+                    break;
+                case 'F':
+                    return 'Feminino'
+                    break;
+                default:
+                    return 'Outro'
+                    break;
+            }
+        }
+
+        var resultado = retornaSexoIF('F');
+        var resultadoSwitch = retornaSexoSwitch('M');
+    
+        console.log(resultado);
+        console.log(resultadoSwitch);
+    </script>
+</body>
+</html>
